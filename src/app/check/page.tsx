@@ -15,9 +15,11 @@ const Video = () => {
   const handleGetClaimableAmount = async () => {
     if (walletAddr.length === 42 && walletAddr !== "") {
       try {
-        const response = await axios.get(`http://localhost:8081/${walletAddr}`);
+        const response = await axios.get(
+          `https://tekio-io.vercel.app/api/users/${walletAddr}`,
+        );
         // console.log("verify email data = ", response?.data);
-        setClaimableAmount(response?.data.claimableAmount);
+        setClaimableAmount(response?.data);
         setShowState(true);
       } catch (err) {
         console.log("Something Went Wrong! ", err);
