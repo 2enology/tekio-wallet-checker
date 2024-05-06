@@ -1,10 +1,7 @@
 "use client";
-import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
 const Roadmap = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-
   const roadMapData = [
     {
       title: "Q4 - 2023",

@@ -16,14 +16,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
-      <ScrollUp />
+    <div className="scroll-container">
       <Hero />
       <About />
       <AboutSectionOne />
       <AboutSectionTwo />
       <Roadmap />
       <Team />
+      <ScrollUp />
     </div>
   );
 }
