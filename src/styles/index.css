@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 body {
   transition: all ease-in-out;
   animation-duration: 1000ms;
