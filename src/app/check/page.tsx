@@ -28,8 +28,8 @@ const Video = () => {
   };
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
-      <div className="container">
+    <section className="relative z-10 min-h-[80vh] py-16 md:py-20 lg:py-28">
+      <div className="container mt-14">
         <SectionTitle
           title="Can check your claimable Tokens Here"
           paragraph=""

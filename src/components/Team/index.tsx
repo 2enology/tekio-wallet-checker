@@ -36,6 +36,17 @@ const testimonialData: Testimonial[] = [
     linkedinLink:
       "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
+  {
+    id: 3,
+    name: "theodoros zavos",
+    designation: "Head Developer @Tekio",
+    content:
+      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    image: "/images/team/theo.png",
+    star: 5,
+    linkedinLink:
+      "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
 ];
 
 const Team = () => {
