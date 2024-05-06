@@ -6,4 +6,5 @@ export type Testimonial = {
   image: string;
   star: number;
   linkedinLink: string;
+  twitterLink: string;
 };

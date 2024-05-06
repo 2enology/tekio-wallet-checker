@@ -6,46 +6,49 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "marinos eliazet",
-    designation: "Co-Founder @Tekio",
+    designation: "Co-Founder",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/marinos.png",
     star: 5,
     linkedinLink:
       "https://www.linkedin.com/in/marinos-eliazet-69a0b3223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    twitterLink: "",
   },
   {
     id: 2,
     name: "antonios karampatakis",
-    designation: "Founder @Tekio",
+    designation: "Founder",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/antonios.png",
     star: 5,
     linkedinLink:
       "https://www.linkedin.com/in/antonios-karampatakis-27a482287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    twitterLink: "",
   },
   {
     id: 3,
     name: "theodoros zavos",
-    designation: "Head Developer @Tekio",
+    designation: "Head Developer",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/theo.png",
     star: 5,
     linkedinLink:
       "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    twitterLink: "https://x.com/zeno_degen",
   },
   {
-    id: 3,
-    name: "theodoros zavos",
-    designation: "Head Developer @Tekio",
+    id: 4,
+    name: "lukas kelley",
+    designation: "Blockchain Developer",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/team/theo.png",
+    image: "/images/team/lukas.png",
     star: 5,
-    linkedinLink:
-      "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinLink: "",
+    twitterLink: "https://x.com/zeno_degen",
   },
 ];
 
@@ -58,7 +61,7 @@ const Team = () => {
       <div className="container mt-10">
         <SectionTitle title="Our Team" paragraph="" center />
 
-        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
