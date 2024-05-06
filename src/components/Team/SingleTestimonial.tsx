@@ -1,5 +1,8 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
+import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
+
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
     <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
@@ -7,7 +10,7 @@ const starIcon = (
 );
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
-  const { star, name, image, content, designation } = testimonial;
+  const { star, name, image, content, designation, linkedinLink } = testimonial;
 
   let ratingIcons = [];
   for (let index = 0; index < star; index++) {
@@ -30,7 +33,15 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
               {name}
             </h3>
             <p className="text-md text-body-color">{designation}</p>
-            <div className="absolute -bottom-8 -right-5 z-[1]">
+            <div className="flex w-full items-center justify-center">
+              <Link
+                href={linkedinLink}
+                className="mt-4 cursor-pointer text-gray-700 transition-all duration-300 hover:text-black dark:text-gray-400 dark:hover:text-gray-200"
+              >
+                <FaLinkedin size={25} />
+              </Link>
+            </div>
+            <div className="absolute -bottom-9 -right-5 z-[1]">
               <svg
                 width="179"
                 height="158"

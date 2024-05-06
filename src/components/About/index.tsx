@@ -40,8 +40,7 @@ const About = () => {
                 }
                 alt="author"
                 fill
-                objectFit="cover"
-                className="rounded-2xl"
+                className="rounded-2xl object-cover"
               />
             </div>
             <div className="w-full lg:w-[700px]">

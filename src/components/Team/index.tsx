@@ -11,6 +11,8 @@ const testimonialData: Testimonial[] = [
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/marinos.png",
     star: 5,
+    linkedinLink:
+      "https://www.linkedin.com/in/marinos-eliazet-69a0b3223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ const testimonialData: Testimonial[] = [
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/antonios.png",
     star: 5,
+    linkedinLink:
+      "https://www.linkedin.com/in/antonios-karampatakis-27a482287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     id: 3,
@@ -29,6 +33,8 @@ const testimonialData: Testimonial[] = [
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
     image: "/images/team/theo.png",
     star: 5,
+    linkedinLink:
+      "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 
