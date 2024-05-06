@@ -128,12 +128,7 @@ const Footer = () => {
         <div className="py-8">
           <p className="text-center text-base text-body-color dark:text-white">
             Designed by{" "}
-            <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary"
-            >
+            <a href="/" className="hover:text-primary">
               TEKIO TEAM
             </a>{" "}
           </p>
