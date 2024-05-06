@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="scroll-container">
+    <div className="scroll-container overflow-auto">
       <Hero />
       <About />
       <AboutSectionOne />

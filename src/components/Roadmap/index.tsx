@@ -71,7 +71,7 @@ const Roadmap = () => {
       className="relative z-10 mb-10 py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <SectionTitle title="Our Roadmap" paragraph="" center width="665px" />
+        <SectionTitle title="Roadmap" paragraph="" center width="665px" />
 
         <div className="w-full overflow-x-auto scroll-smooth">
           <div className="flex w-[1650px] items-start gap-20">

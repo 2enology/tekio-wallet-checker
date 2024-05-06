@@ -45,7 +45,7 @@ const About = () => {
               />
             </div>
             <div className="w-full lg:w-[700px]">
-              <h1 className="text-[40px] font-extrabold md:text-[50px]">
+              <h1 className="text-[30px] font-extrabold md:text-[40px]">
                 {tabActiveState === "target"
                   ? "Target Users"
                   : tabActiveState === "mission"
