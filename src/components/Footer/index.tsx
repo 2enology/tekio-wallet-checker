@@ -110,18 +110,18 @@ const Footer = () => {
         <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
         <div className="mt-5 flex items-center justify-center gap-4">
           <Link href="https://discord.gg/tekionft">
-            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white">
-              <FaXTwitter size={20} />
+            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white dark:hover:text-blue-400">
+              <FaXTwitter size={25} />
             </div>
           </Link>
           <Link href="https://t.me/tekiotoken">
-            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white">
-              <FaTelegramPlane size={20} />
+            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white dark:hover:text-blue-400">
+              <FaTelegramPlane size={25} />
             </div>
           </Link>
           <Link href="https://x.com/tekionft?s=21&t=lLJnFEhSsk6SZUBDdGZTcA">
-            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white">
-              <FaDiscord size={20} />
+            <div className="cursor-pointer text-gray-600 transition-all duration-300 hover:text-blue-400 dark:text-white dark:hover:text-blue-400">
+              <FaDiscord size={25} />
             </div>
           </Link>
         </div>
