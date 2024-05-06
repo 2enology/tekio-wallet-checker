@@ -33,7 +33,7 @@ const menuData: Menu[] = [
   },
   {
     id: 5,
-    title: "Check(TEK)",
+    title: "Check($TEK)",
     path: "/check",
     newTab: false,
   },

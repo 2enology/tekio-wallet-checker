@@ -12,9 +12,7 @@ const Home = () => {
                 {`A gambling platform`}
               </h1>
               <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                {`Tekio proudly presents "Genesis," its official NFT collection set within the Polygon ecosystem, boasting 5555 anime-
-                 inspired, narrative-driven pieces that transcend conventional ownership.
-                 The season-1 (Genesis) is live and we are working on Season 2 Launch by Q3 2024`}
+                {`$TEK, the pioneering GambleFi project, is poised to launch its community-owned casino platform in Q2 2024, offering users lucrative revenue opportunities. Through staking Tek$ tokens, users can earn rewards, with a portion of platform revenue earmarked for token buybacks and distribution among stakers. The platform boasts a robust referral reward system, enabling users to earn up to 60% of payouts from invited participants. Leveraging web3 yield mechanics, $TEK empowers users to own a share of a real online casino while actively engaging in protocol decisions.`}
               </p>
             </div>
           </div>
