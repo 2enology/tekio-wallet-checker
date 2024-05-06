@@ -1,7 +1,7 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
@@ -10,7 +10,8 @@ const starIcon = (
 );
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
-  const { star, name, image, content, designation, linkedinLink } = testimonial;
+  const { star, name, image, content, designation, linkedinLink, twitterLink } =
+    testimonial;
 
   let ratingIcons = [];
   for (let index = 0; index < star; index++) {
@@ -22,25 +23,38 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   }
 
   return (
-    <div className="w-full">
-      <div className="rounded-sm bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
+    <div className="min-h-[343px] w-full">
+      <div className="relative h-full rounded-sm bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
+        {linkedinLink !== "" && (
+          <div className="absolute bottom-4 left-0 right-0 flex w-full items-center justify-center ">
+            <Link
+              href={linkedinLink}
+              className="mt-4 cursor-pointer text-gray-700 transition-all duration-300 hover:text-black dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              <FaLinkedin size={25} />
+            </Link>
+          </div>
+        )}
+        {linkedinLink === "" && (
+          <div className="absolute bottom-4 left-0 right-0 flex w-full items-center justify-center ">
+            <Link
+              href={twitterLink}
+              className="mt-4 cursor-pointer text-gray-700 transition-all duration-300 hover:text-black dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              <FaTwitter size={25} />
+            </Link>
+          </div>
+        )}
         <div className="item-center flex flex-col items-center gap-5 text-center">
           <div className="relative mr-4 h-[150px] w-full max-w-[150px] overflow-hidden rounded-full">
             <Image src={image} alt={name} fill />
           </div>
           <div className="relative w-full">
-            <h3 className="mb-1 text-lg font-semibold uppercase text-dark dark:text-white lg:text-base xl:text-2xl">
+            <h3 className="mb-1 text-lg font-semibold uppercase text-dark dark:text-white lg:text-base xl:text-xl">
               {name}
             </h3>
             <p className="text-md text-body-color">{designation}</p>
-            <div className="flex w-full items-center justify-center">
-              <Link
-                href={linkedinLink}
-                className="mt-4 cursor-pointer text-gray-700 transition-all duration-300 hover:text-black dark:text-gray-400 dark:hover:text-gray-200"
-              >
-                <FaLinkedin size={25} />
-              </Link>
-            </div>
+
             <div className="absolute -bottom-9 -right-5 z-[1]">
               <svg
                 width="179"
