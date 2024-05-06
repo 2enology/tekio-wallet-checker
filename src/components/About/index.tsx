@@ -6,7 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 const About = () => {
   const [tabActiveState, setTabActiveState] = useState("target");
   return (
-    <section id="about" className="py-8 md:py-20 lg:py-28">
+    <section id="about" className="relative py-8 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle title="About us" paragraph="" center />
 
@@ -92,12 +92,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
-          </div> */}
+        <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/about/shape.svg)] bg-cover bg-center bg-no-repeat"></div>
       </div>
     </section>
   );
