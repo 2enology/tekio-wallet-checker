@@ -39,17 +39,6 @@ const testimonialData: Testimonial[] = [
       "https://www.linkedin.com/in/theodoros-zavos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     twitterLink: "https://x.com/zeno_degen",
   },
-  {
-    id: 4,
-    name: "lukas kelley",
-    designation: "Blockchain Developer",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/team/lukas.png",
-    star: 5,
-    linkedinLink: "",
-    twitterLink: "https://x.com/zeno_degen",
-  },
 ];
 
 const Team = () => {
@@ -61,7 +50,7 @@ const Team = () => {
       <div className="container mt-10">
         <SectionTitle title="Our Team" paragraph="" center />
 
-        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
