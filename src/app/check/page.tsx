@@ -9,6 +9,7 @@ import axios from "axios";
 
 const Video = () => {
   const [showState, setShowState] = useState(false);
+  const [winnerState, setWinnerState] = useState(false);
   const [claimableAmount, setClaimableAmount] = useState(0);
   const [walletAddr, setWalletAddr] = useState("");
 
@@ -16,10 +17,10 @@ const Video = () => {
     if (walletAddr.length === 42 && walletAddr !== "") {
       try {
         const response = await axios.get(
-          `https://tekio-io.vercel.app/api/users/${walletAddr}`,
+          `https://tekio-wallet-check-api.vercel.app/api/users/${walletAddr}`,
         );
-        // console.log("verify email data = ", response?.data);
-        setClaimableAmount(response?.data);
+        setClaimableAmount(response?.data.claimableAmount);
+        setWinnerState(response?.data.winnerState);
         setShowState(true);
       } catch (err) {
         console.log("Something Went Wrong! ", err);
@@ -60,6 +61,11 @@ const Video = () => {
                         {claimableAmount}
                       </span>{" "}
                       TOKENs
+                    </p>
+                  )}
+                  {winnerState && (
+                    <p className="text-center font-bold uppercase text-green-500">
+                      {`Congratulations u are an airdrop winner stay tuned to claim your wallet`}
                     </p>
                   )}
                   <button
